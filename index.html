@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sparrow ATX | Digital Media Management in Austin </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="wrap">
+
+    <div id="special">
+        <div class="content">
+            <p>Buy our new ebook</p>
+        </div><!--content-->
+    </div> <!--special-->
+
+    <header>
+        <div class="content">
+            <h1></h1><img src="img/logo.png" alt="Logo" /></h1>
+
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="blog.html"><span id="blog">Blog</span></a></li>
+                </ul>
+            </nav>
+        </div> <!--content-->
+    </header>
+
+    <div id="message">
+        <div class="content">
+            <p><strong>New Article</strong> Manage your clients <a href="#">Read More</a></p>
+        </div>
+    </div> <!--message-->
+
+
+
+
+
+
+
+
+    <section id="home">
+        <div class="content">
+            <h2>Digital Media Management</h2>
+            <dl>
+                <dd class="img"><i class="fa fa-signal fa-5x"></i></dd>
+                <dt>Design</dt>
+                <dd>Trying to navigate the shifting media landscape without a plan is like steering a boat without a map. We help small businesses decide on goals, metrics, and voice. Spending your time and money as efficiently as possible.</dd>
+            </dl>
+            <dl>
+
+                <dd class="img"><i class="fa fa-comments fa-5x"></i></dd>
+                <dt>Sustain</dt>
+                <dd>Your time and business knowledge is probably not best spent on Twitter on Facebook. Luckily, ours is. We can translate your message, and business goals into day by day public communication that will lead to customer loyalty and sale.</dd>
+            </dl>
+            <dl>
+                <dd class="img"><i class="fa fa-compass fa-5x"></i></dd>
+                <dt>Collaborate</dt>
+                <dd>Even the smartest businesses can feel lost when the Media come calling. Whether a reporter a reporter or an online member has questions. We have experience making sure your digital media presence aligns with your companies message.</dd>
+            </dl>
+        </div><!--content-->
+    </section>
+
+    <section id="about">
+            <div class="content">
+                <h2>Meet the Team</h2>
+                <div class="team">
+                    <dl class="matt">
+                        <img src="img/matt.png" width="400" height="400" alt="#" />
+                    </dl>
+                    <dl class="greg">
+                        <img src="img/greg.png" width="400" height="400" alt="#" />
+                    </dl>
+                </div><!--Team-->
+        </div><!--content-->
+    </section>
+
+    <section id="services">
+        <div class="content">
+            <h2>Services</h2>
+            <dl>
+                <dd class="img"><i class="fa fa-twitter fa-3x"></i></dd>
+                <dt>Social Media </dt>
+                <dd>From Twitter to Pinterest, our team can craft engaging messages that encourages sales.</dd>
+            </dl>
+            <dl>
+                <dd class="img"><i class="fa fa-code fa-3x"></i></dd>
+                <dt>Web Development</dt>
+                <dd>Sparrow uses modern html5 strategy while maintaining a clear goal of accessibility and clarity.</dd>
+            </dl>
+            <dl>
+                <dd class="img"><i class="fa fa-comment-o fa-3x"></i></dd>
+                <dt>Message Formation</dt>
+                <dd>Good content is content that inspires action in your customers. Your business goals are our priority.</dd>
+            </dl>
+            <dl>
+                <dd class="img"><i class="fa fa-group fa-3x"></i></dd>
+                <dt>Community Outreach</dt>
+                <dd>Know what your audience is interested in and make sure you are first to respond to any issues.</dd>
+            </dl>
+            <dl>
+                <dd class="img"><i class="fa fa-pencil fa-3x"></i></dd>
+                <dt>Copy Writing</dt>
+                <dd>Web content is written, read, and consumed differently than traditional media. We enjoy that.</dd>
+            </dl>
+            <dl>
+                <dd class="img"><i class="fa fa-paperclip fa-3x"></i></dd>
+                <dt>Email Scripting</dt>
+                <dd>A quality email system can be the difference between a read message, or one sent to the spam folder.</dd>
+            </dl>
+        </div><!--content-->
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <form>
+                <div>
+                    <label>
+                        <span>Your name</span><input id="name" type="text" name="name" />
+                    </label>
+
+                    <label>
+                        <span>Email Address</span><input id="email" type="text" name="email" />
+                    </label>
+
+                    <label>
+                        <span>Subject</span><input id="subject" type="text" name="subject" />
+                    </label>
+
+                    <label>
+                        <span>Message</span><textarea id="feedback" name="feedback"></textarea>
+                        <input class="button" type="button" value="Submit Form" />
+                    </label>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Coming Soon</p>
+    </footer>
+</div> <!--wrapper-->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="scripts.js"></script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+            $('header').addClass("sticky");
+        }
+        else{
+            $('header').removeClass("sticky");
+        }
+    });
+
+
+
+</script>
+</body>
+</html>

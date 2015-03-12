@@ -1,0 +1,368 @@
+/*RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*TOP LEVEL*/
+body{
+    font-size:medium;
+    font-family: 'Open Sans', sans-serif;
+    color: #252525;}
+
+
+.content {
+    max-width:960px;
+    margin: 0 auto;
+}
+
+/*SECTION LEVEL*/
+header, #home, #about, #services, #contact, #message, #special, footer{
+    float:left;
+    width:100%;
+    padding:10px
+}
+
+#home, #about, #services, #contact{
+    height: 100vh;
+    padding-top:85px;
+}
+
+@media (max-height: 600px){
+    #home, #about, #services, #contact{
+        height: 600px;
+    }
+}
+
+
+
+#home{
+    background-color: #FFFF9D;
+
+}
+header, #special{
+    background-color: steelblue;
+}
+
+#about{
+    background-color: #BEEB9F;
+}
+
+#services{
+    background-color: #FFFF9D;
+}
+
+#contact{
+    background-color: #FF6138;
+
+}
+
+
+#message{
+    background-color: lightcoral;
+    clear:both;
+    text-align: center;
+}
+
+footer{
+    background-color: #c5cab2;
+}
+
+
+header{
+    position:fixed;
+    line-height:60px;
+    height: 60px; /*should be same as line-height*/
+    transition: all 0.2s ease;
+    margin-top: 30px;
+    border-bottom: solid 1px steelblue;
+    -webkit-box-shadow: 0px 14px 25px -10px rgba(92,92,92,1);
+    -moz-box-shadow: 0px 14px 25px -10px rgba(92,92,92,1);
+    box-shadow: 0px 14px 25px -10px rgba(92,92,92,1);
+    z-index: 1000;
+}
+
+
+header.sticky {
+    line-height:50px;
+    height:50px;
+    margin-top: 0;
+    transition: all 0.3s ease;
+    position:fixed;
+}
+
+
+#special {
+    line-height:15px;
+    height:15px;
+
+}
+#message {
+    padding-top:85px;
+
+}
+
+footer{
+    height:50px;
+
+}
+
+/*ELEMENT LEVEL FORMATTING*/
+h2 {
+    font-size: 300%;
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+h3 {
+    font-size: 120%;
+}
+
+#special p{
+    float:right
+}
+
+
+header img{
+    float:left;
+}
+
+dt {
+    font-size: 150%;
+    font-weight: 700;
+}
+
+dl {
+    width: 300px;
+    float:left;
+    text-align: center;
+}
+
+dl .matt{
+    width:40%;
+}
+dl.greg{
+    width:40%;
+    float:right;
+}
+
+dd{
+    padding: 1em;
+}
+
+
+ul li{
+    font-size: 100%;
+}
+
+#register{
+    list-style:none;
+}
+
+footer{
+    height:200px;
+}
+
+/*CONTACT FORMATTING*/
+
+form    {
+    margin:auto;
+    position:relative;
+    max-width:60%;
+}
+
+label span{
+    font-weight: 700;
+}
+input    {
+    width:100%;
+    display:block;
+
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input, textarea {
+    background-color: rgba(151, 71, 27, 0.03);
+}
+
+textarea#feedback {
+    width:100%;
+    height:150px;
+
+}
+
+textarea.message {
+    display:block;
+}
+
+input.button {
+    width:100px;
+    position:absolute;
+    right: 1px;
+    bottom:-40px;
+    background:#09C;
+    color:#fff;
+    height:30px;
+    border: 1px solid #999;
+}
+input.button:hover {
+    background:#fff;
+    color:#09C;
+}
+
+textarea:focus, input:focus {
+    border: 1px solid #09C;
+}
+
+/*NAV FORMATTING*/
+nav[role='navigation'] ul {
+    float:right;
+    list-style:none;
+
+
+}
+nav[role='navigation'] ul li{
+    float:left;
+    padding-left:3em;
+
+}
+
+nav[role='navigation'] ul li a{
+    float:left;
+    display:block;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav[role='navigation'] ul li a:hover{
+    transition: all 0.3s ease;
+    font-size: 150%;
+
+}
+
+nav[role='navigation'] ul li a{
+    transition: all 0.3s ease;
+
+}
+
+nav[role='navigation'] ul li a::selection{
+
+}
+
+nav #blog{
+    color: darkorange;
+    font-weight: 700;
+
+}
+
+
+/*MOBILE STYLES*/
+@media  only screen and (max-width: 900px){
+    #home, #about, #services, #contact{
+        height: 1000px;
+    }
+
+    #services{
+        height:1200px;
+    }
+
+    #contact{
+        height:600px;
+    }
+    header{
+        position: fixed;
+        width:100%;
+        height:100px;
+        line-height:40px
+
+    }
+
+    header.sticky{
+        position: fixed;
+        width:100%;
+        height:100px;
+        line-height:40px
+    }
+
+    header .content  nav ul[role='navigation']{
+        width:100%;
+        text-align: left;
+    }
+
+    header .content nav[role='navigation'] ul li a:hover{
+        font-size:100%;
+    }
+
+
+    header .content nav[role='navigation'] ul li{
+        padding:10px;
+        text-align: center;
+    }
+
+    h2{
+        padding:10px
+    }
+    dl {
+
+        float: none;
+        width: 70%;
+        margin: auto;
+    }
+    dl.greg {
+        float:none;
+    }
+
+
+}
